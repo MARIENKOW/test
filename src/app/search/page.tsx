@@ -27,6 +27,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
 
     return (
         <Container>
+            <h2 className={styles.search__title}>Search Result</h2>
             <div className={styles.search}>
                 {data && data.length > 0 ? (
                     <div className={styles.search__grid}>
