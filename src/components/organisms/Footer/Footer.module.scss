@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copyright {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        padding: 17px;
+        justify-content: center;
+    }
+}

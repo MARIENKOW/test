@@ -3,18 +3,14 @@ import Image from "next/image";
 import Container from "@/components/atoms/Container/Container";
 import Link from "@/components/atoms/Link/Link";
 import ButtonOutlined from "@/components/atoms/ButtonOutlined/ButtonOutlined";
+import Logo from "@/components/atoms/Logo";
 
 export function Header() {
     return (
-        <div className={styles.header}>
+        <header className={styles.header}>
             <Container>
                 <div className={styles.header__inner}>
-                    <Image
-                        width={170}
-                        height={35}
-                        alt="Logo"
-                        src={"/Logo.png"}
-                    />
+                    <Logo />
                     <nav className={styles.header__nav}>
                         <Link>Home</Link>
                         <Link>How It Works</Link>
@@ -32,6 +28,6 @@ export function Header() {
                     </div>
                 </div>
             </Container>
-        </div>
+        </header>
     );
 }

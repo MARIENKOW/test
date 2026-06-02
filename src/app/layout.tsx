@@ -21,9 +21,16 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="uk">
-            <body className={montserrat.className}>
+            <body
+                style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    minHeight: "100dvh",
+                }}
+                className={montserrat.className}
+            >
                 <Header />
-                {children}
+                <main style={{ flex: 1 }}>{children}</main>
                 <Footer />
             </body>
         </html>
