@@ -22,8 +22,8 @@ export function Header() {
 
                     <nav className={styles.header__nav}>
                         <NavLink>Home</NavLink>
-                        <NavLink>How It Works</NavLink>
-                        <NavLink>Latest Contracts Post</NavLink>
+                        <NavLink href="/#how-it-works">How It Works</NavLink>
+                        <NavLink href="/#latest-contracts">Latest Contracts Post</NavLink>
                         <NavLink>People Loved us!</NavLink>
                     </nav>
 
@@ -47,8 +47,8 @@ export function Header() {
             {menuOpen && (
                 <div className={styles.header__drawer}>
                     <NavLink>Home</NavLink>
-                    <NavLink>How It Works</NavLink>
-                    <NavLink>Latest Contracts Post</NavLink>
+                    <NavLink href="/#how-it-works">How It Works</NavLink>
+                    <NavLink href="/#latest-contracts">Latest Contracts Post</NavLink>
                     <NavLink>People Loved us!</NavLink>
                     <ButtonOutlined>Login</ButtonOutlined>
                     <Button>Sign Up</Button>

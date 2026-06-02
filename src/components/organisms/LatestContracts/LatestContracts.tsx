@@ -32,7 +32,7 @@ export default async function LatestContracts({ tabId }: LatestContractsProps) {
     if (error) return "Error...";
 
     return (
-        <div className={styles.latest}>
+        <div id="latest-contracts" className={styles.latest}>
             <Container>
                 <div style={{ marginBottom: "40px" }}>
                     <h2 className={styles.latest__title}>

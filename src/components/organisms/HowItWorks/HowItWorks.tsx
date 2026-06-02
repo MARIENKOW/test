@@ -4,7 +4,7 @@ import styles from "@/components/organisms/HowItWorks/HowItWorks.module.scss";
 
 export default function HowItWorks() {
     return (
-        <div className={styles.how}>
+        <div id="how-it-works" className={styles.how}>
             <Container>
                 <h2 className={styles.how__title}>How It Works</h2>
                 <p className={styles.how__subtitle}>
