@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.scss";
 import { Header } from "@/components/organisms/Header/Header";
 import { Footer } from "@/components/organisms/Footer/Footer";
+import Main from "@/components/organisms/Main/Main";
 
 const montserrat = Montserrat({
     variable: "--font-montserrat",
@@ -29,7 +30,7 @@ export default function RootLayout({
                 }}
                 className={montserrat.className}
             >
-                <Header />
+                <Main />
                 <main style={{ flex: 1 }}>{children}</main>
                 <Footer />
             </body>

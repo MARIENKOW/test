@@ -1,0 +1,26 @@
+.input {
+    background: transparent;
+    display: flex;
+    flex: 1;
+    align-self: stretch;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: medium;
+    min-width: 0px;
+
+}
+.search {
+    padding: 10px;
+    width: 100%;
+    max-width: 1135px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    border-color: #ffffff;
+    backdrop-filter: blur(6px) brightness(100%);
+    -webkit-backdrop-filter: blur(6px) brightness(100%);
+    background: linear-gradient(113deg, rgba(255, 255, 255, 0.47) 0%, rgba(255, 255, 255, 0.1) 100%);
+    border-radius: 99px;
+}

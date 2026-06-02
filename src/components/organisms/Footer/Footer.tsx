@@ -2,13 +2,16 @@ import Container from "@/components/atoms/Container/Container";
 import Icon from "@/components/atoms/Icon/Icon";
 import Logo from "@/components/atoms/Logo";
 import styles from "@/components/organisms/Footer/Footer.module.scss";
+import Link from "next/link";
 
 export function Footer() {
     return (
         <Container>
             <footer className={styles.footer}>
                 <div className={styles.footer__main}>
-                    <Logo />
+                    <Link href={"/"}>
+                        <Logo />
+                    </Link>
                     <div style={{ display: "flex", gap: "16px" }}>
                         <Icon
                             width={15}
