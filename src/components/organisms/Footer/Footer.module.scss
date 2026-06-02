@@ -1,6 +1,7 @@
 .footer {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
     gap: 20px;
     &__main {
         display: flex;
@@ -12,6 +13,7 @@
         text-align: center;
         align-items: center;
         padding: 17px;
+        opacity: 50%;
         justify-content: center;
     }
 }
