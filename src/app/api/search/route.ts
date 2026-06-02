@@ -16,7 +16,6 @@ export async function POST(req: NextRequest) {
         result = result.filter(
             (c) =>
                 c.title.toLowerCase().includes(q) ||
-                c.company.toLowerCase().includes(q) ||
                 c.description.toLowerCase().includes(q)
         );
     }

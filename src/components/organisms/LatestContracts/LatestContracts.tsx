@@ -12,6 +12,8 @@ interface LatestContractsProps {
 export default async function LatestContracts({ tabId }: LatestContractsProps) {
     const activeTabId = tabId ?? defaultTabId[0].id;
 
+    let error: null | unknown = null;
+
     const [tabs, contracts]: [Tab[], Contract[]] = await Promise.all([
         fetch(`http://localhost:3000/api/tabs`, { method: "POST" }).then((r) =>
             r.json(),
@@ -20,8 +22,14 @@ export default async function LatestContracts({ tabId }: LatestContractsProps) {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ tabId: activeTabId }),
-        }).then((r) => r.json()),
+        })
+            .then((r) => r.json())
+            .catch((e) => {
+                error = e || true;
+            }),
     ]);
+
+    if (error) return "Error...";
 
     return (
         <div className={styles.latest}>

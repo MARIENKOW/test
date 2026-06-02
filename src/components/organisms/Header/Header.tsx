@@ -24,6 +24,7 @@ export function Header() {
                         <NavLink>Home</NavLink>
                         <NavLink>How It Works</NavLink>
                         <NavLink>Latest Contracts Post</NavLink>
+                        <NavLink>People Loved us!</NavLink>
                     </nav>
 
                     <div className={styles.header__actions}>
@@ -48,6 +49,7 @@ export function Header() {
                     <NavLink>Home</NavLink>
                     <NavLink>How It Works</NavLink>
                     <NavLink>Latest Contracts Post</NavLink>
+                    <NavLink>People Loved us!</NavLink>
                     <ButtonOutlined>Login</ButtonOutlined>
                     <Button>Sign Up</Button>
                 </div>
@@ -55,4 +57,3 @@ export function Header() {
         </header>
     );
 }
-

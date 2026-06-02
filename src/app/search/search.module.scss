@@ -1,0 +1,26 @@
+.search {
+    padding: 40px 0;
+
+    &__meta {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 32px;
+
+        strong {
+            color: #111;
+        }
+    }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    &__empty {
+        font-size: 16px;
+        color: #999;
+        text-align: center;
+        padding: 60px 0;
+    }
+}
