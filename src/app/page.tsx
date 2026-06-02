@@ -1,5 +1,6 @@
 import Trusted from "@/components/organisms/Trusted/Trusted";
 import LatestContracts from "@/components/organisms/LatestContracts/LatestContracts";
+import HowItWorks from "@/components/organisms/HowItWorks/HowItWorks";
 
 interface HomeProps {
     searchParams: Promise<{ tab?: string }>;
@@ -19,6 +20,7 @@ export default async function Home({ searchParams }: HomeProps) {
         >
             <Trusted />
             <LatestContracts tabId={tab} />
+            <HowItWorks />
         </div>
     );
 }

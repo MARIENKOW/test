@@ -1,0 +1,52 @@
+.how {
+    &__item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+        gap: 15px;
+        aspect-ratio: 1 / 1;
+        background-repeat: no-repeat;
+        padding: 40px;
+        border-radius: 30px;
+        overflow: hidden;
+        background-size: cover;
+        &__name {
+            font-size: 22px;
+            line-height: 31px;
+            font-weight: 500;
+            color: #fff;
+        }
+        &__description {
+            font-size: 16px;
+            color: #fff;
+            line-height: 24px;
+            max-width: 220px;
+        }
+    }
+    &__list {
+        margin-top: 28px;
+        display: flex;
+        gap: 30px;
+
+        @media (max-width: 870px) {
+            flex-direction: column;
+        }
+    }
+    &__title {
+        font-size: 45px;
+        line-height: 60px;
+        text-align: center;
+        font-weight: 600;
+        @media (max-width: 768px) {
+            font-size: 38px;
+        }
+    }
+    &__subtitle {
+        font-size: 18px;
+        text-align: center;
+        line-height: 30px;
+        opacity: 50%;
+    }
+}
