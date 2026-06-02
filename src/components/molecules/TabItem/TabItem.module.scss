@@ -1,0 +1,40 @@
+@use "../../../styles/variables" as *;
+
+.tabItem {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 99px;
+    background: $color-secondary;
+    cursor: pointer;
+    white-space: nowrap;
+
+    &__icon {
+        padding: 10px;
+        background-color: #1a51fc;
+        border-radius: 99px;
+    }
+    &__text {
+        font-size: 16px;
+        color: #27272a;
+        padding: 0 10px;
+    }
+    transition:
+        background 0.15s,
+        color 0.15s;
+
+    &--active {
+        background: #1a51fc;
+        color: #fff;
+        border-color: transparent;
+        & .tabItem__icon {
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 99px;
+        }
+        & .tabItem__text {
+            color: #fff;
+        }
+    }
+}
